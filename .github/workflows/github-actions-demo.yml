@@ -9,7 +9,8 @@ jobs:
         uses: fulghum/first-interaction@64bdb230668432c6ad905f3080df6d00e4d32229
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: '# Message with markdown.\nThis is the message that will be displayed on users' first issue.'
+          issue-message: "#### Hi 👋\nCongrats on opening your first issue, have you looked at the [troubleshooting steps](https://github.com)?"
+          pr-message: "#### Hi 👋\nCongrats on opening your first pull request, have you looked at the [contributing guide](https://github.com)?"
 
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
