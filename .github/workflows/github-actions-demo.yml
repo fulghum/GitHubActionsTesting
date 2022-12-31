@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: First interaction
-        uses: fulghum/first-interaction@main
+        uses: fulghum/first-interaction@c1da24f5a241b6d1965f217b31a9e1b43e992b5d
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: "#### Hi 👋\nCongrats on opening your first issue, have you looked at the [troubleshooting steps](https://github.com)?"
