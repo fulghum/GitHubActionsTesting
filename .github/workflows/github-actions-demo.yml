@@ -6,11 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: First interaction
-        uses: fulghum/first-interaction@64bdb230668432c6ad905f3080df6d00e4d32229
+        uses: fulghum/first-interaction@main
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: "#### Hi 👋\nCongrats on opening your first issue, have you looked at the [troubleshooting steps](https://github.com)?"
-          pr-message: "#### Hi 👋\nCongrats on opening your first pull request, have you looked at the [contributing guide](https://github.com)?"
 
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
