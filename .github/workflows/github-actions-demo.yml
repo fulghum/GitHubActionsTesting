@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: Examining issue from ${{ github.actor }}
+run-name: Applying labels to issue from ${{ github.actor }}
 on:
   pull_request:
     types: [opened]
