@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 run-name: Examining issue from ${{ github.actor }}
-on: [issues]
+on:
+  pull_request:
+    types: [opened]
+  issues:
+    types: [opened]
 jobs:
   # Label-Customer-Issues
   #   Labels new issues and pull requests if the author is not
