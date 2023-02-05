@@ -12,7 +12,8 @@ jobs:
       - name: Label-Customer-Issues
         uses: fulghum/first-interaction@main
         with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: 'huh?'
           issue-label: "customer-issue"
           pr-label: "contribution"
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
           exclude: dependabot, dependabot2
