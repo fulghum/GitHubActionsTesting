@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: Examining issue from ${{ github.actor }}
 on: [issues]
 jobs:
   # Label-Customer-Issues
@@ -13,7 +13,6 @@ jobs:
         uses: fulghum/first-interaction@main
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: 'huh?'
           issue-label: "customer-issue"
           pr-label: "contribution"
           exclude: dependabot, dependabot2
