@@ -1,10 +1,15 @@
 name: GitHub Actions Demo
 run-name: Applying labels to issue from ${{ github.actor }}
 on:
-  pull_request:
+  # NOTE: You must use pull_request_target (and not pull_request), because
+  #       pull_request runs in the context of the forked repo, and will not
+  #       have permissions to label the PR. pull_request_target runs in the
+  #       context of the base repo, and will have permissions to label the PR.
+  pull_request_target:
     types: [opened]
   issues:
     types: [opened]
+
 jobs:
   # Label-Customer-Issues
   #   Labels new issues and pull requests if the author is not
